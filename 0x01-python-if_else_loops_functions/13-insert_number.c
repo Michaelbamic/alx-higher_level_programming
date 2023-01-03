@@ -23,10 +23,10 @@ listint_t *insert_node(listint_t **head, int number)
 		if (h->n > number)
 			break;
 		h_prev = h;
-		h = ->next;
+		h = h->next;
 	}
 
-	new-> = number;
+	new->n = number;
 
 	if (*head == NULL)
 	{
