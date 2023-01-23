@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/python30
 
 def safe_print_division(a, b):
     """
