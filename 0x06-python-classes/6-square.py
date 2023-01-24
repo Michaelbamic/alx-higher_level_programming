@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+# -*- coding: utf-8 -*-
+
 class Square:
     """Class Square that has attributes. Instantiation with size
     Attributes:
