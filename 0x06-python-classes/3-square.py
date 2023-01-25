@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+""" This module defines a square class with a private size attribute.
+    Square also has a public instance method area() that gets the area
+    of the square """
 
 
 class Square:
