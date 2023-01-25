@@ -1,24 +1,27 @@
 #!/usr/bin/python3
-# -*- coding: utf-8 -*-
+""" This module defines a square class with a private size attribute with
+    a setter and getter methods to retrieve and update the size attribute.
+    Square also has a public instance method area() that
+    gets the area of the square and
+    my_print() that prints the square with character # to stdout """
+
+
 class Square:
-    """ A class that defines a square by its size
-    """
+    """ A class that defines a square by its size"""
+
     def __init__(self, size=0, position=(0, 0)):
-        """ Method to initialize the square object
-        """
+        """ Method to initialize the square object"""
         self.size = size
         self.position = position
 
     @property
     def size(self):
-        """ Method to returns the size value
-        """
+        """ Method to returns the size value"""
         return self.__size
 
     @size.setter
     def size(self, value):
-        """ Method to set the size value of the square object
-        """
+        """ Method to set the size value of the square object"""
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
         if value < 0:
@@ -27,14 +30,12 @@ class Square:
 
     @property
     def position(self):
-        """ Method that returns the position value
-        """
+        """ Method that returns the position value"""
         return self.__position
 
     @position.setter
     def position(self, value):
-        """ Method that sets the position value of a square object
-        """
+        """ Method that sets the position value of a square object"""
         if not isinstance(value, tuple):
             raise TypeError("position must be a tuple of 2 positive integers")
         if len(value) != 2:
@@ -48,14 +49,12 @@ class Square:
         self.__position = value
 
     def area(self):
-        """ Method that returns the square are of the object
-        """
+        """ Method that returns the square are of the object"""
         return (self.__size ** 2)
 
     def my_print(self):
         """ Method that prints a # square according
-        to the size value
-        """
+        to the size value"""
         if self.size == 0:
             print()
         else:
