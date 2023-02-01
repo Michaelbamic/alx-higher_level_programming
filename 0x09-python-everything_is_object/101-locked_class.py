@@ -2,8 +2,7 @@
 """
     This module contains a locked class that prevents the user
     from dynamically creating new instance attributes except if
-    the attribute is first_name
-"""
+    the attribute is first_name"""
 
 class LockedClass:
     """ A locked class """
@@ -12,4 +11,5 @@ class LockedClass:
 
     def __init__(self):
         """ Initializes self """
+
         pass
